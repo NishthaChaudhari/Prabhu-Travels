@@ -1,0 +1,942 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>PRABHU TRAVELS </title>
+    <meta name="description" content="Adventure Camp Organization in Gujarat">  
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="_token" content="ru1eDWUcuiX3gShEBz1SqObADPuSmSMwDXc3pp9L" >
+    
+    <!-- Favicons -->
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.png">
+
+    <!-- FontAwesome Icons -->
+    <link href="/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
+    
+    <!-- Bootstrap CSS File -->
+    <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Animate CSS File -->
+    <link href="/lib/animate/animate.css" rel="stylesheet">
+
+    <!-- Loading CSS -->
+    <link href="/lib/loading/loading.css" rel="stylesheet">
+    <link href="/lib/loading/loading-btn.css" rel="stylesheet">
+
+    <!-- Cropper CSS --> 
+    <link rel="stylesheet" type="text/css" href="/lib/cropper/css/cropper.css">
+
+
+    <!-- Main Stylesheet File -->
+    <link href="/css/trekon.css?v=3" rel="stylesheet">
+    <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="/lib/cropper/js/cropper.js"></script>
+    <!-- Start VWO Async SmartCode -->
+<script type='text/javascript' id='vwoCode'>
+window._vwo_code=window._vwo_code || (function() {
+var account_id=1,
+version = 1.5,
+settings_tolerance=2000,
+library_tolerance=2500,
+use_existing_jquery=false,
+is_spa=1,
+hide_element='body',
+hide_element_style = 'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important',
+/* DO NOT EDIT BELOW THIS LINE */
+f=false,d=document,vwoCodeEl=d.querySelector('#vwoCode'),code={use_existing_jquery:function(){return use_existing_jquery},library_tolerance:function(){return library_tolerance},hide_element_style:function(){return'{'+hide_element_style+'}'},finish:function(){if(!f){f=true;var e=d.getElementById('vis_opt_path_hides');if(e)e.parentNode.removeChild(e)}},finished:function(){return f},load:function(e){var t=d.createElement('script');t.fetchPriority='high';t.src=e;t.type='text/javascript';t.onerror=function(){_vwo_code.finish()};d.getElementsByTagName('head')[0].appendChild(t)},getVersion:function(){return version},getMatchedCookies:function(e){var t=[];if(document.cookie){t=document.cookie.match(e)||[]}return t},getCombinationCookie:function(){var e=code.getMatchedCookies(/(?:^|;)\s?(_vis_opt_exp\d+combi=[^;$]*)/gi);e=e.map(function(e){try{var t=decodeURIComponent(e);if(!/_vis_opt_exp\d+combi=(?:\d+,?)+\s*$/.test(t)){return''}return t}catch(e){return''}});var i=[];e.forEach(function(e){var t=e.match(/([\d,]+)/g);t&&i.push(t.join('-'))});return i.join('|')},init:function(){if(d.URL.indexOf('vwo_disable_')>-1)return;window.settings_timer=setTimeout(function(){_vwo_code.finish()},settings_tolerance);var e=d.createElement('style'),t=hide_element?hide_element+'{'+hide_element_style+'}':'',i=d.getElementsByTagName('head')[0];e.setAttribute('id','_vis_opt_path_hides');vwoCodeEl&&e.setAttribute('nonce',vwoCodeEl.nonce);e.setAttribute('type','text/css');if(e.styleSheet)e.styleSheet.cssText=t;else e.appendChild(d.createTextNode(t));i.appendChild(e);var n=this.getCombinationCookie();this.load('https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&f='+ +is_spa+'&vn='+version+(n?'&c='+n:''));return settings_timer}};window._vwo_settings_timer = code.init();return code;}());
+</script>
+<!-- End VWO Async SmartCode -->
+
+  
+</head>
+<body>
+    <div class="modal fade" id="cropperModalIdProof" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Crop the image</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="cropperImageDiv" class="img-container">
+                      <img id="cropperImageIdProof" style="max-width: 540px; height: auto;" src="">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="cropButton btn btn-primary">Set Image</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="cropperModalPhoto" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Crop the image</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="cropperImageDiv" class="img-container">
+                      <img id="cropperImagePhoto" style="max-width: 540px; height: auto;" src="">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="cropButton btn btn-primary">Set Image</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="preloader" class="text-center">
+        <div>
+            <img src="../img/shivji-removebg-preview.png">
+        </div>
+    </div>
+
+    
+    <div>
+        <!--==========================
+            Header
+        ============================-->
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <a href="/" class="scrollto">
+                        <img class="logo" src="/img/logo_bell.jpg" style="height: 3.2rem;" style="height: 4.5rem;" alt="TrekOn" title="TrekOn">
+                    </a>
+                </div>
+
+                <nav id="nav-menu-container">
+                    <ul class="nav-menu">
+                        <li>
+                            <a href="../index.html"><i class="pr-2 fa fa-home"></i>Home</a>
+                        </li>
+                        <li>
+                            <a href="./about.html"></i>About</a>
+                        </li>
+                        <li>
+                            <a href="../html/camps.html"></i>Camps/Events</a>
+                        </li>
+                        <li>
+                            <a href="../html/downloads.html"></i>Downloads</a>
+                        </li>
+                        <li>
+                            <a href="../html/gallery.html"></i>Gallery</a>
+                        </li>
+                        <li>
+                            <a href="../html/contact-us.html"></i>Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- <div class="top-subheader">
+            <div>
+                <div class="pull-right">
+                        <span class="pr-2 label">Social Media: </span>
+                    <a href="https://www.facebook.com/TrekOnTrek/" class="pr-2" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/TrekOn_" class="pr-2" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://plus.google.com/u/1/103865060767841999000" class="pr-2" target="_blank"><i class="fa fa-google-plus"></i></a>
+                    <a href="https://www.linkedin.com/in/trek-on-720021139" class="pr-2" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/trekon_trek/" class="pr-2" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCDRfGLMDD6SnoaRS8f3bMqw" class="pr-2" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                </div>
+            </div>
+        </div>
+ -->
+        
+        <!--==========================
+            Main Section
+        ============================-->
+        <div class="main">
+                <div class="pagehead text-center">
+        <h2 class="py-5 m-0 text-white wow zoomIn" data-wow-delay="0.4s">About Us</h2>
+    </div>
+    
+    <section>
+        <div class="container py-5">
+            <div class="card shadow-sm p-5 mt-5 wow fadeInDown" data-wow-delay="0.4s">
+                <div class="text-center mb-5">
+                    <img class="logo" src="/img/logo_bell-removebg-preview.png" style="height: 6rem;" alt="TrekOn" title="TrekOn">
+                </div>
+                <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error iste, consectetur ipsum voluptatum repudiandae impedit, libero iusto architecto quidem excepturi molestias, sapiente totam velit magni voluptatem vero officiis corporis quisquam.
+                </p>
+                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos explicabo corporis ea ullam libero fugit. Placeat tenetur ratione libero adipisci tempore. Eius facere, deserunt dignissimos blanditiis ipsum omnis consequatur assumenda.</p>
+                <p class="mb-0 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, non aliquid facere quasi ratione officia possimus corporis similique iusto repudiandae.</p>
+            </div>
+
+            <div class="row row-eq-height">
+                <div class="col-md-4 mt-4 wow fadeInLeft" data-wow-delay="0.4s">
+                    <div class="card shadow-sm p-5 h-100">
+                        <h4>Vision</h4>
+                        <p class="mb-0 text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias delectus dolor, corrupti quibusdam itaque atque laborum sit iusto esse excepturi dignissimos blanditiis deleniti minima, pariatur dolore laudantium iste? Distinctio at impedit reiciendis dolores culpa voluptas dolorem repudiandae officiis! Vitae itaque quibusdam cupiditate officiis natus nisi neque, dolores excepturi officia eos.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-4 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class=" p-5 card shadow-sm h-100">
+                        <h4>Mission</h4>
+                        <p class="mb-0 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia molestias assumenda iusto officiis maxime aliquam praesentium, necessitatibus temporibus iste blanditiis iure architecto tempora in minima numquam voluptas fuga sint hic, ipsum accusamus a modi. Blanditiis explicabo, quis expedita amet corporis ipsa neque vel fugit? Consectetur impedit expedita deserunt facilis quibusdam.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-4 wow fadeInRight" data-wow-delay="0.4s">
+                    <div class="card shadow-sm p-5 h-100">
+                        <h4>Objective</h4>
+                        <p class="mb-0 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam qui alias fuga quasi, quae at molestias quo ducimus temporibus iste exercitationem eligendi. Eos autem nisi unde deserunt illo sequi laboriosam labore repellat fugit quidem libero dolorum culpa, beatae ea placeat? Non nihil, possimus sunt esse a hic! Quia, natus voluptatum.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="team-boxed">
+            <div class="container">
+                <div class="intro">
+                    <div class="heading text-center">
+                        <h2>Team</h2>
+                    </div>
+                    <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae.</p>
+                </div>
+                <div class="row people">
+                    <div class="col-md-6 col-lg-4 item">
+                        <div class="box"><img class="rounded-circle" src="https://epicbootstrap.com/freebies/snippets/team-cards/assets/img/1.jpg">
+                            <h3 class="name">Ben Johnson</h3>
+                            <p class="title">Musician</p>
+                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
+                            <div class="social"><a href="#"><i class="fa-brands fa-facebook-official"></i></a><a href="#"><i class="fa-brands fa-twitter"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item">
+                        <div class="box"><img class="rounded-circle" src="https://epicbootstrap.com/freebies/snippets/team-cards/assets/img/1.jpg">
+                            <h3 class="name">Emily Clark</h3>
+                            <p class="title">Artist</p>
+                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
+                            <div class="social"><a href="#"><i class="fa-brands fa-facebook-official"></i></a><a href="#"><i class="fa-brands fa-twitter"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4 item">
+                        <div class="box"><img class="rounded-circle" src="https://epicbootstrap.com/freebies/snippets/team-cards/assets/img/1.jpg">
+                            <h3 class="name">Carl Kent</h3>
+                            <p class="title">Stylist</p>
+                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
+                            <div class="social"><a href="#"><i class="fa-brands fa-facebook-official"></i></a><a href="#"><i class="fa-brands fa-twitter"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row people" style="padding:0px !important; justify-content: space-evenly;">
+                    <div class="col-md-6 col-lg-4 item">
+                        <div class="box"><img class="rounded-circle" src="https://epicbootstrap.com/freebies/snippets/team-cards/assets/img/1.jpg">
+                            <h3 class="name">Emily Clark</h3>
+                            <p class="title">Artist</p>
+                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
+                            <div class="social"><a href="#"><i class="fa-brands fa-facebook-official"></i></a><a href="#"><i class="fa-brands fa-twitter"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 item">
+                        <div class="box"><img class="rounded-circle" src="https://epicbootstrap.com/freebies/snippets/team-cards/assets/img/1.jpg">
+                            <h3 class="name">Emily Clark</h3>
+                            <p class="title">Artist</p>
+                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id. Etiam dictum feugiat tellus, a semper massa. </p>
+                            <div class="social"><a href="#"><i class="fa-brands fa-facebook-official"></i></a><a href="#"><i class="fa-brands fa-twitter"></i></a><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section>
+        <div class="container py-5">
+            <div class="heading text-center wow zoomIn" data-wow-delay=".4s">
+                <h2>Camps / Events</h2>
+            </div>
+            <div class="row camp mt-5">
+
+                                <div class="col-lg-4 col-md-6 p-3">
+                    <a href="/camps/saputara-weekend-adventure-camp" class="card shadow-sm pb-0 rounded-4">
+                        <div class="p-3">
+                            <img src="img/camps/saputara.jpg" class="shadow-none bg-light img-fluid">
+                            <h4 class="camp-title pt-3 mb-0">Saputara Weekend Adventure Camp</h4>
+                            <div class="season">
+                                <i class="fa fa-snowflake-o"></i>
+                                <p>Monsoon, Winter</p>
+                            </div>
+                            <div class="semi-details mt-3">
+                                <div class="day-night">
+                                    <i class="fa fa-sun-o pr-1"></i>
+                                    <p class="mb-0 pr-2">3</p>
+                                    <i class="fa fa-moon-o pr-1"></i>
+                                    <p class="mb-0">2</p>
+                                </div>
+                                <div class="price">
+                                    <i class="fa fa-inr mr-2"></i>
+                                    <div class="rate">
+                                        <h4>2799</h4>
+                                        <p>per person</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                <div class="col-lg-4 col-md-6 p-3">
+                    <a href="/camps/polo-forest-weekend-trekking-camp" class="card shadow-sm pb-0 rounded-4">
+                        <div class="p-3">
+                            <img src="img/camps/polo_forest_weekend_trekking_camp.jpg" class="shadow-none bg-light img-fluid">
+                            <h4 class="camp-title pt-3 mb-0">Polo Forest Weekend Trekking Camp</h4>
+                            <div class="season">
+                                <i class="fa fa-snowflake-o"></i>
+                                <p>Monsoon, Winter</p>
+                            </div>
+                            <div class="semi-details mt-3">
+                                <div class="day-night">
+                                    <i class="fa fa-sun-o pr-1"></i>
+                                    <p class="mb-0 pr-2">2</p>
+                                    <i class="fa fa-moon-o pr-1"></i>
+                                    <p class="mb-0">1</p>
+                                </div>
+                                <div class="price">
+                                    <i class="fa fa-inr mr-2"></i>
+                                    <div class="rate">
+                                        <h4>1199</h4>
+                                        <p>per person</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                <div class="col-lg-4 col-md-6 p-3">
+                    <a href="/camps/bakor-weekend-adventure-camp" class="card shadow-sm pb-0 rounded-4">
+                        <div class="p-3">
+                            <img src="img/camps/bakor_weekend_adventure_camp.jpg" class="shadow-none bg-light img-fluid">
+                            <h4 class="camp-title pt-3 mb-0">Bakor Weekend Adventure Camp</h4>
+                            <div class="season">
+                                <i class="fa fa-snowflake-o"></i>
+                                <p>Monsoon, Winter</p>
+                            </div>
+                            <div class="semi-details mt-3">
+                                <div class="day-night">
+                                    <i class="fa fa-sun-o pr-1"></i>
+                                    <p class="mb-0 pr-2">1</p>
+                                    <i class="fa fa-moon-o pr-1"></i>
+                                    <p class="mb-0">0</p>
+                                </div>
+                                <div class="price">
+                                    <i class="fa fa-inr mr-2"></i>
+                                    <div class="rate">
+                                        <h4>850</h4>
+                                        <p>per person</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                <div class="col-lg-4 col-md-6 p-3">
+                    <a href="/camps/polo-forest-one-day-adventure-camp" class="card shadow-sm pb-0 rounded-4">
+                        <div class="p-3">
+                            <img src="img/camps/polo_forest_one_day_adventure_camp.jpg" class="shadow-none bg-light img-fluid">
+                            <h4 class="camp-title pt-3 mb-0">Polo Forest One Day Adventure Camp</h4>
+                            <div class="season">
+                                <i class="fa fa-snowflake-o"></i>
+                                <p>Monsoon, Winter</p>
+                            </div>
+                            <div class="semi-details mt-3">
+                                <div class="day-night">
+                                    <i class="fa fa-sun-o pr-1"></i>
+                                    <p class="mb-0 pr-2">1</p>
+                                    <i class="fa fa-moon-o pr-1"></i>
+                                    <p class="mb-0">0</p>
+                                </div>
+                                <div class="price">
+                                    <i class="fa fa-inr mr-2"></i>
+                                    <div class="rate">
+                                        <h4>999</h4>
+                                        <p>per person</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                <div class="col-lg-4 col-md-6 p-3">
+                    <a href="/camps/mount-abu-weekend-adventure-camp" class="card shadow-sm pb-0 rounded-4">
+                        <div class="p-3">
+                            <img src="img/camps/mount_abu_weekend_adventure_camp.jpg" class="shadow-none bg-light img-fluid">
+                            <h4 class="camp-title pt-3 mb-0">Mount Abu Weekend Adventure Camp</h4>
+                            <div class="season">
+                                <i class="fa fa-snowflake-o"></i>
+                                <p>all season</p>
+                            </div>
+                            <div class="semi-details mt-3">
+                                <div class="day-night">
+                                    <i class="fa fa-sun-o pr-1"></i>
+                                    <p class="mb-0 pr-2">3</p>
+                                    <i class="fa fa-moon-o pr-1"></i>
+                                    <p class="mb-0">2</p>
+                                </div>
+                                <div class="price">
+                                    <i class="fa fa-inr mr-2"></i>
+                                    <div class="rate">
+                                        <h4>2999</h4>
+                                        <p>per person</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                <div class="col-lg-4 col-md-6 p-3">
+                    <a href="/camps/jaisalmer-desert-camping-&amp;-trekking" class="card shadow-sm pb-0 rounded-4">
+                        <div class="p-3">
+                            <img src="img/camps/jaisalmer_desert_camping_&amp;_trekking.jpg" class="shadow-none bg-light img-fluid">
+                            <h4 class="camp-title pt-3 mb-0">Jaisalmer Desert Camping &amp; Trekking</h4>
+                            <div class="season">
+                                <i class="fa fa-snowflake-o"></i>
+                                <p>Winter</p>
+                            </div>
+                            <div class="semi-details mt-3">
+                                <div class="day-night">
+                                    <i class="fa fa-sun-o pr-1"></i>
+                                    <p class="mb-0 pr-2">3</p>
+                                    <i class="fa fa-moon-o pr-1"></i>
+                                    <p class="mb-0">2</p>
+                                </div>
+                                <div class="price">
+                                    <i class="fa fa-inr mr-2"></i>
+                                    <div class="rate">
+                                        <h4>2999</h4>
+                                        <p>per person</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                <div class="col-lg-4 col-md-6 p-3">
+                    <a href="/camps/manali-adventure-camp-_-with-kasol" class="card shadow-sm pb-0 rounded-4">
+                        <div class="p-3">
+                            <img src="img/camps/manali_adventure_camping_&amp;_trekking_-_diwali_special_camp..jpg" class="shadow-none bg-light img-fluid">
+                            <h4 class="camp-title pt-3 mb-0">Manali Adventure Camp _ With Kasol</h4>
+                            <div class="season">
+                                <i class="fa fa-snowflake-o"></i>
+                                <p>Winter</p>
+                            </div>
+                            <div class="semi-details mt-3">
+                                <div class="day-night">
+                                    <i class="fa fa-sun-o pr-1"></i>
+                                    <p class="mb-0 pr-2">8</p>
+                                    <i class="fa fa-moon-o pr-1"></i>
+                                    <p class="mb-0">7</p>
+                                </div>
+                                <div class="price">
+                                    <i class="fa fa-inr mr-2"></i>
+                                    <div class="rate">
+                                        <h4>7999</h4>
+                                        <p>per person</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                <div class="col-lg-4 col-md-6 p-3">
+                    <a href="/camps/dalhousie-adventure-&amp;-trekking-camp" class="card shadow-sm pb-0 rounded-4">
+                        <div class="p-3">
+                            <img src="img/camps/dalhousie_adventure_&amp;_trekking_camp.jpg" class="shadow-none bg-light img-fluid">
+                            <h4 class="camp-title pt-3 mb-0">Dalhousie Adventure &amp; Trekking Camp</h4>
+                            <div class="season">
+                                <i class="fa fa-snowflake-o"></i>
+                                <p>Summer</p>
+                            </div>
+                            <div class="semi-details mt-3">
+                                <div class="day-night">
+                                    <i class="fa fa-sun-o pr-1"></i>
+                                    <p class="mb-0 pr-2">8</p>
+                                    <i class="fa fa-moon-o pr-1"></i>
+                                    <p class="mb-0">7</p>
+                                </div>
+                                <div class="price">
+                                    <i class="fa fa-inr mr-2"></i>
+                                    <div class="rate">
+                                        <h4>7999</h4>
+                                        <p>per person</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                <div class="col-lg-4 col-md-6 p-3">
+                    <a href="/camps/kedarkantha-trek---winter-snow-camping-&amp;-trekking" class="card shadow-sm pb-0 rounded-4">
+                        <div class="p-3">
+                            <img src="img/camps/kedarkantha_trek_-_winter_snow_camping_&amp;_trekking.jpg" class="shadow-none bg-light img-fluid">
+                            <h4 class="camp-title pt-3 mb-0">Kedarkantha Trek - Winter Snow Camping &amp; Trekking</h4>
+                            <div class="season">
+                                <i class="fa fa-snowflake-o"></i>
+                                <p>Winter</p>
+                            </div>
+                            <div class="semi-details mt-3">
+                                <div class="day-night">
+                                    <i class="fa fa-sun-o pr-1"></i>
+                                    <p class="mb-0 pr-2">5</p>
+                                    <i class="fa fa-moon-o pr-1"></i>
+                                    <p class="mb-0">4</p>
+                                </div>
+                                <div class="price">
+                                    <i class="fa fa-inr mr-2"></i>
+                                    <div class="rate">
+                                        <h4>4999</h4>
+                                        <p>per person</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                <div class="col-lg-4 col-md-6 p-3">
+                    <a href="/camps/beyt-dwarka---marine-camp-&amp;-dolphin-exploration" class="card shadow-sm pb-0 rounded-4">
+                        <div class="p-3">
+                            <img src="img/camps/beyt_dwarka_-_marine_camp_&amp;_dolphin_exploration.jpg" class="shadow-none bg-light img-fluid">
+                            <h4 class="camp-title pt-3 mb-0">Beyt Dwarka - Marine Camp &amp; Dolphin Exploration</h4>
+                            <div class="season">
+                                <i class="fa fa-snowflake-o"></i>
+                                <p>Winter</p>
+                            </div>
+                            <div class="semi-details mt-3">
+                                <div class="day-night">
+                                    <i class="fa fa-sun-o pr-1"></i>
+                                    <p class="mb-0 pr-2">2</p>
+                                    <i class="fa fa-moon-o pr-1"></i>
+                                    <p class="mb-0">3</p>
+                                </div>
+                                <div class="price">
+                                    <i class="fa fa-inr mr-2"></i>
+                                    <div class="rate">
+                                        <h4>2699</h4>
+                                        <p>per person</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                <div class="col-lg-4 col-md-6 p-3">
+                    <a href="/camps/explore-the-himachal-&amp;-amritsar" class="card shadow-sm pb-0 rounded-4">
+                        <div class="p-3">
+                            <img src="img/camps/adventure_trip_to_himachal_pradesh.jpg" class="shadow-none bg-light img-fluid">
+                            <h4 class="camp-title pt-3 mb-0">Explore The Himachal &amp; Amritsar</h4>
+                            <div class="season">
+                                <i class="fa fa-snowflake-o"></i>
+                                <p>Winter</p>
+                            </div>
+                            <div class="semi-details mt-3">
+                                <div class="day-night">
+                                    <i class="fa fa-sun-o pr-1"></i>
+                                    <p class="mb-0 pr-2">12</p>
+                                    <i class="fa fa-moon-o pr-1"></i>
+                                    <p class="mb-0">11</p>
+                                </div>
+                                <div class="price">
+                                    <i class="fa fa-inr mr-2"></i>
+                                    <div class="rate">
+                                        <h4>12999</h4>
+                                        <p>per person</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                <div class="col-lg-4 col-md-6 p-3">
+                    <a href="/camps/saputara-2-days-adventure-camp" class="card shadow-sm pb-0 rounded-4">
+                        <div class="p-3">
+                            <img src="img/camps/saputara_2_days_adventure_camp.jpg" class="shadow-none bg-light img-fluid">
+                            <h4 class="camp-title pt-3 mb-0">Saputara 2 Days Adventure Camp</h4>
+                            <div class="season">
+                                <i class="fa fa-snowflake-o"></i>
+                                <p>Winter, Monsoon</p>
+                            </div>
+                            <div class="semi-details mt-3">
+                                <div class="day-night">
+                                    <i class="fa fa-sun-o pr-1"></i>
+                                    <p class="mb-0 pr-2">2</p>
+                                    <i class="fa fa-moon-o pr-1"></i>
+                                    <p class="mb-0">1</p>
+                                </div>
+                                <div class="price">
+                                    <i class="fa fa-inr mr-2"></i>
+                                    <div class="rate">
+                                        <h4>1300</h4>
+                                        <p>per person</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                <div class="col-lg-4 col-md-6 p-3">
+                    <a href="/camps/manali-summer-trekking-camp" class="card shadow-sm pb-0 rounded-4">
+                        <div class="p-3">
+                            <img src="img/camps/manali_summer.jpg" class="shadow-none bg-light img-fluid">
+                            <h4 class="camp-title pt-3 mb-0">Manali Summer Trekking Camp</h4>
+                            <div class="season">
+                                <i class="fa fa-snowflake-o"></i>
+                                <p>Summer, Monsoon</p>
+                            </div>
+                            <div class="semi-details mt-3">
+                                <div class="day-night">
+                                    <i class="fa fa-sun-o pr-1"></i>
+                                    <p class="mb-0 pr-2">10</p>
+                                    <i class="fa fa-moon-o pr-1"></i>
+                                    <p class="mb-0">9</p>
+                                </div>
+                                <div class="price">
+                                    <i class="fa fa-inr mr-2"></i>
+                                    <div class="rate">
+                                        <h4>4499</h4>
+                                        <p>per person</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                <div class="col-lg-4 col-md-6 p-3">
+                    <a href="/camps/kedarnath-dham-trek-_-with-badrinath-dham" class="card shadow-sm pb-0 rounded-4">
+                        <div class="p-3">
+                            <img src="img/camps/kedarnath_temple_-.jpg" class="shadow-none bg-light img-fluid">
+                            <h4 class="camp-title pt-3 mb-0">Kedarnath Dham Trek _ with Badrinath Dham</h4>
+                            <div class="season">
+                                <i class="fa fa-snowflake-o"></i>
+                                <p>Summer, Monsoon,  Winter</p>
+                            </div>
+                            <div class="semi-details mt-3">
+                                <div class="day-night">
+                                    <i class="fa fa-sun-o pr-1"></i>
+                                    <p class="mb-0 pr-2">9</p>
+                                    <i class="fa fa-moon-o pr-1"></i>
+                                    <p class="mb-0">8</p>
+                                </div>
+                                <div class="price">
+                                    <i class="fa fa-inr mr-2"></i>
+                                    <div class="rate">
+                                        <h4>13999</h4>
+                                        <p>per person</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                <div class="col-lg-4 col-md-6 p-3">
+                    <a href="/camps/the-leh---ladakh-expedition" class="card shadow-sm pb-0 rounded-4">
+                        <div class="p-3">
+                            <img src="img/camps/leh_ladakh.jpg" class="shadow-none bg-light img-fluid">
+                            <h4 class="camp-title pt-3 mb-0">The Leh - Ladakh Expedition</h4>
+                            <div class="season">
+                                <i class="fa fa-snowflake-o"></i>
+                                <p>Summer</p>
+                            </div>
+                            <div class="semi-details mt-3">
+                                <div class="day-night">
+                                    <i class="fa fa-sun-o pr-1"></i>
+                                    <p class="mb-0 pr-2">14</p>
+                                    <i class="fa fa-moon-o pr-1"></i>
+                                    <p class="mb-0">13</p>
+                                </div>
+                                <div class="price">
+                                    <i class="fa fa-inr mr-2"></i>
+                                    <div class="rate">
+                                        <h4>24999</h4>
+                                        <p>per person</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                <div class="col-lg-4 col-md-6 p-3">
+                    <a href="/camps/kasol-sar-pass-trek" class="card shadow-sm pb-0 rounded-4">
+                        <div class="p-3">
+                            <img src="img/camps/kasol_sar_pass_trek.jpg" class="shadow-none bg-light img-fluid">
+                            <h4 class="camp-title pt-3 mb-0">Kasol Sar Pass Trek</h4>
+                            <div class="season">
+                                <i class="fa fa-snowflake-o"></i>
+                                <p>Summer</p>
+                            </div>
+                            <div class="semi-details mt-3">
+                                <div class="day-night">
+                                    <i class="fa fa-sun-o pr-1"></i>
+                                    <p class="mb-0 pr-2">6</p>
+                                    <i class="fa fa-moon-o pr-1"></i>
+                                    <p class="mb-0">5</p>
+                                </div>
+                                <div class="price">
+                                    <i class="fa fa-inr mr-2"></i>
+                                    <div class="rate">
+                                        <h4>6999</h4>
+                                        <p>per person</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                <div class="col-lg-4 col-md-6 p-3">
+                    <a href="/camps/leh-ladakh-bike-expedition" class="card shadow-sm pb-0 rounded-4">
+                        <div class="p-3">
+                            <img src="img/camps/leh_ladakh_bike_expedition.jpg" class="shadow-none bg-light img-fluid">
+                            <h4 class="camp-title pt-3 mb-0">Leh Ladakh Bike Expedition</h4>
+                            <div class="season">
+                                <i class="fa fa-snowflake-o"></i>
+                                <p>Summer</p>
+                            </div>
+                            <div class="semi-details mt-3">
+                                <div class="day-night">
+                                    <i class="fa fa-sun-o pr-1"></i>
+                                    <p class="mb-0 pr-2">10</p>
+                                    <i class="fa fa-moon-o pr-1"></i>
+                                    <p class="mb-0">9</p>
+                                </div>
+                                <div class="price">
+                                    <i class="fa fa-inr mr-2"></i>
+                                    <div class="rate">
+                                        <h4>32500</h4>
+                                        <p>per person</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                                <div class="col-lg-4 col-md-6 p-3">
+                    <a href="/camps/join-trek-on---instructor-training-camp" class="card shadow-sm pb-0 rounded-4">
+                        <div class="p-3">
+                            <img src="img/camps/instructor_survival_&amp;_training_camp_2019.jpg" class="shadow-none bg-light img-fluid">
+                            <h4 class="camp-title pt-3 mb-0">Join TREK ON - Instructor Training Camp</h4>
+                            <div class="season">
+                                <i class="fa fa-snowflake-o"></i>
+                                <p>Monsoon, Winter</p>
+                            </div>
+                            <div class="semi-details mt-3">
+                                <div class="day-night">
+                                    <i class="fa fa-sun-o pr-1"></i>
+                                    <p class="mb-0 pr-2">2</p>
+                                    <i class="fa fa-moon-o pr-1"></i>
+                                    <p class="mb-0">1</p>
+                                </div>
+                                <div class="price">
+                                    <i class="fa fa-inr mr-2"></i>
+                                    <div class="rate">
+                                        <h4>800</h4>
+                                        <p>per person</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </section> -->
+    <!--
+
+
+    <section>
+        <div class="container py-5">
+            <div class="heading text-center wow zoomIn" data-wow-delay=".4s">
+                <h2>Our Team</h2>
+            </div>
+            <div class="row camp mt-5 justify-content-center">
+
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3">
+                    <div class="card shadow-sm px-3 pb-0">
+                        <div class="row">
+                            <div class="col-12 px-0 wow zoomIn" data-wow-delay=".4s">
+                                <img src="img/dummy.jpg" class="shadow-none bg-white img-fluid">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="w-100 py-2 text-center">
+                            <h4 class="title mb-1"><b>John Doe</b></h4>
+                            <p class="mb-0">Team Leader</p>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3">
+                    <div class="card shadow-sm px-3 pb-0">
+                        <div class="row">
+                            <div class="col-12 px-0 wow zoomIn" data-wow-delay=".4s">
+                                <img src="img/dummy.jpg" class="shadow-none bg-white img-fluid">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="w-100 py-2 text-center">
+                            <h4 class="title mb-1"><b>John Doe</b></h4>
+                            <p class="mb-0">Team Leader</p>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3">
+                    <div class="card shadow-sm px-3 pb-0">
+                        <div class="row">
+                            <div class="col-12 px-0 wow zoomIn" data-wow-delay=".4s">
+                                <img src="img/dummy.jpg" class="shadow-none bg-white img-fluid">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="w-100 py-2 text-center">
+                            <h4 class="title mb-1"><b>John Doe</b></h4>
+                            <p class="mb-0">Team Leader</p>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3">
+                    <div class="card shadow-sm px-3 pb-0">
+                        <div class="row">
+                            <div class="col-12 px-0 wow zoomIn" data-wow-delay=".4s">
+                                <img src="img/dummy.jpg" class="shadow-none bg-white img-fluid">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="w-100 py-2 text-center">
+                            <h4 class="title mb-1"><b>John Doe</b></h4>
+                            <p class="mb-0">Team Leader</p>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3">
+                    <div class="card shadow-sm px-3 pb-0">
+                        <div class="row">
+                            <div class="col-12 px-0 wow zoomIn" data-wow-delay=".4s">
+                                <img src="img/dummy.jpg" class="shadow-none bg-white img-fluid">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="w-100 py-2 text-center">
+                            <h4 class="title mb-1"><b>John Doe</b></h4>
+                            <p class="mb-0">Team Leader</p>
+                        </div>
+                    </div>
+                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 col-6 p-3">
+                    <div class="card shadow-sm px-3 pb-0">
+                        <div class="row">
+                            <div class="col-12 px-0 wow zoomIn" data-wow-delay=".4s">
+                                <img src="img/dummy.jpg" class="shadow-none bg-white img-fluid">
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="w-100 py-2 text-center">
+                            <h4 class="title mb-1"><b>John Doe</b></h4>
+                            <p class="mb-0">Team Leader</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    -->
+        </div>
+
+        <!--==========================
+            Footer
+        ============================-->
+        <footer class="fixed-bottom" style="z-index: 0">
+            <div class="container">
+                <div class="row">
+
+                    <!-- 1ST FOOTER COLUMN-->
+                    <div class="col-md-4 pt-4">
+                        <h6 class="pb-2">ABOUT US</h6>
+                        <img src="/img/logo_bell-removebg-preview.png" style="width: 120px; height:auto" alt="Trekon Footer Logo"
+                            class="d-block pb-2" />
+
+                        <div class="mt-2 mr-5">We have expert adventure sports trainers and experienced travelling aides
+                            on board for guidance and assistance during the journey.
+                        </div>
+                    </div>
+
+                    <!-- 2ND FOOTER COLUMN-->
+                    <div class="col-md-2 pt-4">
+                        <h6 class="pb-2">CONTACT US</h6>
+                        <div class="mb-2">
+                            <i class="fa fa-phone" style="width:25px"></i>
+                            <a href="tel:+919099 0495 66">9099049566</a>
+                        </div>
+                        <div class="mb-2">
+                            <i class="fa fa-mobile" style="width:25px; font-size: 20px"></i>
+                            <a href="tel:+919099 9773 43">9099977343</a>
+                        </div>
+                        <div class="mb-2">
+                            <i class="fa fa-envelope" style="width:25px"></i>
+                            <a href="mailto:info@trekon.in">info@trekon.in</a>
+                        </div>
+                        <div>
+                            <a href="/terms-and-conditions">• Terms & Conditions</a>
+                        </div>
+                        <div>
+                            <a href="/privacy-policy">• Privacy Policy</a>
+                        </div>
+                    </div>
+
+                    <!-- 3RD FOOTER COLUMN-->
+                    <div class="col-md-3 pt-4">
+                        <h6 class="pb-2">ADDRESS</h6>
+                        <span style="text-align: justify"><i class="fa fa-map-marker" style="width:15px"></i>
+                            04-1st Floor, Goyal Tower,<br>
+                            Opp. Gulbai Tekra Police Choki,<br>
+                            Near Panjarapol Char Rasta, <br>
+                            University Road, Ahmedabad <br>
+                            380015
+                        </span>
+                    </div>
+
+                    <!-- 4TH FOOTER COLUMN-->
+                    <div class="col-md-3 pt-4">
+                        <h6 class="pb-2">LOCATION</h6>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.8434448953685!2d72.54412270513231!3d23.029519773146866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84ce7d8695c7%3A0x8535f3fd00701b8a!2sTrekOn!5e0!3m2!1sen!2sin!4v1556448954870!5m2!1sen!2sin"
+                            width="100%" height="auto" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-4 text-center" style="border-top: 1px solid rgba(255,255,255,0.3); background: #000">
+                <p class="m-0 py-2" style="font-size: 13px;">&copy; 2023 Prabhu Travels - Adventure Camp Organization in Gujarat
+                </p>
+            </div>
+        </footer><!-- #footer -->
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>    </div>
+     <!-- JavaScript Libraries -->
+    <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Animations -->
+    <script src="/lib/animate/wow.min.js"></script>
+    <script src="/lib/easing/easing.min.js"></script>
+    <!-- Main Javascript File -->
+    <script src="/js/trekon.js?v=3"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
